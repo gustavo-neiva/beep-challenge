@@ -12,9 +12,9 @@ Given("I access homepage") do
 end
 
 Given("my homepage has three currency check buttons") do
-  assert(@browser.button(id: "usd_brl").exists?)
-  assert(@browser.button(id: "usd_eur").exists?)
-  assert(@browser.button(id: "usd_arg").exists?)
+  assert(@browser.link(id: "usd_brl").exists?)
+  assert(@browser.link(id: "usd_eur").exists?)
+  assert(@browser.link(id: "usd_arg").exists?)
 end
 
 Given("there is a Highchart already showing historical usd/brl data") do
