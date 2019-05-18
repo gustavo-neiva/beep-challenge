@@ -9,12 +9,14 @@ class RodaQuotations < Roda
 
   route do |r|
     r.root do
-      @linegraph = highchart_example()
+      @line_graph = line_graph()
+      binding.pry
+      r.params
       view("homepage")
     end
   end
 
-  def highchart_example
+  def line_graph
     @line_graph = Daru::View::Plot.new(data= make_random_series(3), adapter: :highcharts, name: 'spline1', type: 'spline', title: 'Irregular spline')
   end
 
