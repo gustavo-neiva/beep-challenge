@@ -17,11 +17,11 @@ Given("my homepage has three currency check buttons") do
   assert(@browser.link(id: "usd_arg").exists?)
 end
 
-Given("there is a Highchart already showing historical usd/brl data") do
-  pending
+Given("there is a Highchart already showing historical usd to brl data") do
+  assert(@browser.element(class: "highcharts-background").exists?)
 end
 
-When("I click on the usd/brl button") do
+When("I click on the usd\/brl button") do
   pending
 end
 
