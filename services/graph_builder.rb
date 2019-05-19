@@ -7,14 +7,12 @@ class GraphBuilder
   end
 
   def build_graph
-    raw_data = fetch_data
-    dates = raw_data[:dates]
-    currency = raw_data[:currency]
-    graph = LazyHighCharts::HighChart.new('graph') do |g|
+    dates, currency = fetch_data
+    LazyHighCharts::HighChart.new('graph') do |g|
       g.title(text: 'Currency quotations')
       g.series(
         type: 'spline',
-        name: 'BRL',
+        name: @currency[3..-1],
         data: currency
       )
       g.yAxis(title: {text: 'Currency Price for 1 USD'})
@@ -25,7 +23,10 @@ class GraphBuilder
   private
 
   def fetch_data
-    CurrencyApiWrapper.new('USDBRL').make_requests
+    raw_data = CurrencyApiWrapper.new(@currency).make_requests
+    dates = raw_data[:dates]
+    currency = raw_data[:currency]
+    return dates, currency
   end
 
 end

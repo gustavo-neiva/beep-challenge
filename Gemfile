@@ -10,6 +10,5 @@ group :test, :development do
   gem 'cucumber'
   gem 'watir'
   gem 'pry-byebug'
-  gem 'minitest'
   gem 'webmock'
 end

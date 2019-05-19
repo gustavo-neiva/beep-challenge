@@ -1,7 +1,20 @@
-<h1 class="title">
-  Hello World
-</h1>
-<a class="button is-dark" id="usd_brl">Usd/Brl</a>
-<a class="button is-dark" id="usd_eur">Usd/Eur</a>
-<a class="button is-dark" id="usd_arg">Usd/Arg</a>
-<div><%= high_chart("my_id", @line_graph)  %></div>
+<section class="section">
+  <div class="container level-center" style="text-align: center">
+    <h1 class="title" style="display: inline-block">Currency Historical Data</h1>
+    <br>
+    <h2 class="subtitle" style="display: inline-block">Beep Saude Challenge</h2>
+  </div>
+  <br>
+  <nav class="level">
+    <div class="level-left">
+      <a class="button is-dark" href="/usdbrl" id="usd_brl">USD to BRL</a>
+    </div>
+    <div class="level-center"> 
+      <a class="button is-dark" href="/usdeur" id="usd_eur">USD to EUR</a>
+    </div>
+    <div class="level-right">
+      <a class="button is-dark" href="/usdars" id="usd_arg">USD to ARS</a>
+    </div>
+  </nav>
+  <div><%= high_chart("my_id", @line_graph)  %></div>
+</section>
