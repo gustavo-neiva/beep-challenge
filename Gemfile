@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 gem 'roda', '~> 2.1.0'
 gem 'tilt', '~> 2.0.1'
-gem 'daru-view', git: 'https://github.com/SciRuby/daru-view'
+gem 'lazy_high_charts'
+gem 'http'
+gem 'dotenv'
 
 group :test, :development do
   gem 'cucumber'

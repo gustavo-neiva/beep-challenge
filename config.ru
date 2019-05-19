@@ -1,2 +1,3 @@
-require File.expand_path("../roda_quotations",  __FILE__)
+require File.expand_path("../app",  __FILE__)
+
 run RodaQuotations.app
