@@ -1,6 +1,5 @@
 require 'roda'
 require 'daru/view'
-require 'pry-byebug'
 
 class RodaQuotations < Roda
   plugin :static, ["/images", "/css", "/js"]
