@@ -9,7 +9,6 @@ class RodaQuotations < Roda
   route do |r|
     r.root do
       @line_graph = line_graph()
-      binding.pry
       r.params
       view("homepage")
     end
