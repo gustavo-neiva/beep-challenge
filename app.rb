@@ -7,7 +7,7 @@ include LazyHighCharts::LayoutHelper
 
 Dotenv.load
 
-class RodaQuotations < Roda
+class BeepChallenge < Roda
   plugin :static, ["/css", "/js"]
   plugin :render
   plugin :head

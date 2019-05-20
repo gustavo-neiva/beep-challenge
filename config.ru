@@ -1,3 +1,3 @@
 require File.expand_path("../app",  __FILE__)
 
-run RodaQuotations.app
+run BeepChallenge.app

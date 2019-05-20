@@ -13,9 +13,8 @@ class CurrencyApiWrapper
   end
 
   def get_currency_data(date)
-    # key = ENV['CURRENCY_API_KEY']
-    # HTTP.get("http://www.apilayer.net/api/historical?access_key=#{key}&date=#{date}")
-    HTTP.get("http://www.apilayer.net/api/historical?access_key=8fe60d94d3af8516b819338809772a35&date=#{date}")
+    key = ENV['CURRENCY_API_KEY']
+    HTTP.get("http://www.apilayer.net/api/historical?access_key=#{key}&date=#{date}")
   end
 
   def generate_date_range
