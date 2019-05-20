@@ -5,6 +5,7 @@ gem 'tilt', '~> 2.0.1'
 gem 'lazy_high_charts'
 gem 'http'
 gem 'dotenv'
+gem 'actionview'
 
 group :test, :development do
   gem 'cucumber'
