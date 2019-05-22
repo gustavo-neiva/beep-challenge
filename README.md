@@ -30,7 +30,7 @@ Da linha de comando:
 
 1. Clonar o projeto: `git clone https://github.com/luizgzn/beep-challenge`
 2. Criar uma conta na [Currency Layer](https://currencylayer.com/)
-3. Criar um arquiv `.env` e adicionar `CURRENCY_API_KEY=SUA_CHAVE_API`
+3. Criar um arquiv `touch .env` e adicionar `CURRENCY_API_KEY=SUA_CHAVE_API` ao arquivo
 4. Acessar o diretório `bundle install` para instalar todas as gems.
 5. Iniciar servidor WEBrick::HTTPServer `rackup`
 6. Em outra aba do terminal rodar a suite de tests `cucumber`
