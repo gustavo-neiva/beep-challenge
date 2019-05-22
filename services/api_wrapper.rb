@@ -8,7 +8,7 @@ class CurrencyApiWrapper
   def request_currency_data
     dates = generate_date_range
     currency = filter_and_parse_data(dates)
-    { dates: dates, currency: currency}
+    { dates: dates, currency: currency }
   end
 
   private
