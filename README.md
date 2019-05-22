@@ -15,7 +15,7 @@ Dependências
 - [Ruby bundler gem](http://bundler.io/) || `gem install bundle`
 - [Chromedriver](http://chromedriver.storage.googleapis.com/index.html)
 
-The Stack
+Stack tecnológico
 ---------
 
 - [Roda](https://roda.jeremyevans.net/) - Microframework em Ruby construídos sobre o Rack
