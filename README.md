@@ -1,7 +1,7 @@
 Desafio Beep Saúde - Gráfico Cotações
 ==================================
 
-[Desafio Beep Saúde](https://beep-saude-challenge.herokuapp.com/)
+[Desafio Beep Saúde](https://beep-saude-challenge.herokuapp.com/) - Exemplo no heroku
 
 Esse projeto tem como objetivo criar uma simples página web que consome a API de cotações diárias e exibe esses dados em um gráfico utilizando a biblioteca Highcharts.
 
