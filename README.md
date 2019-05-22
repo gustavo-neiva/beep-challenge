@@ -25,6 +25,7 @@ Stack tecnológico
 - [Watir](http://watir.com/) - Wrapper Selenium webdriver com sintaxe simples. Simula o browser
 - [HTTP gem](https://github.com/httprb/http) - Gem para realizar requests HTTP
 - [Lazy High Charts](https://github.com/michelson/lazy_high_charts) - Wrapper do Highcharts em Ruby
+- [Bulma](https://bulma.io/) - Framework CSS free e open source baseado em flexbox
 
 Instalação e uso
 --------------------
