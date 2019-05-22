@@ -21,12 +21,19 @@ Given("there is a Highchart already showing historical usd to brl data") do
   assert(@browser.element(class: "highcharts-background").exists?)
 end
 
-When("I click on the usd\/brl button") do
-  pending
+When("the app renders the graph") do
+  assert(@browser.element(:css => 'g.highcharts-markers').exists?)
 end
 
 Then("the chart data corresponds to the currency api json") do
-  pending
+  tooltip_values = @browser.elements(css: 'g.highcharts-tooltip tspan')
+  date = tooltip_values[0].text
+  Date.parse(date)
+  currency_name = tooltip_values[2].text
+  assert(currency_name == 'BRL:')
+  currency = tooltip_values[3].text
+  assert((currency =~ /-?\d+(?:\.\d+)?/).zero?)
+  Float(currency)
 end
 
 Before do 

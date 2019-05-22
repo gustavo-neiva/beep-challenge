@@ -23,7 +23,7 @@ class GraphBuilder
   private
 
   def fetch_data
-    raw_data = CurrencyApiWrapper.new(@currency).make_requests
+    raw_data = CurrencyApiWrapper.new(@currency).request_currency_data
     dates = raw_data[:dates]
     currency = raw_data[:currency]
     return dates, currency
