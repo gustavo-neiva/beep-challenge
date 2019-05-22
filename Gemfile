@@ -1,15 +1,26 @@
 source 'https://rubygems.org'
 
-gem 'roda', '~> 2.1.0'
-gem 'tilt', '~> 2.0.1'
-gem 'lazy_high_charts'
-gem 'http'
-gem 'dotenv'
+ruby '2.6.0'
+# Highcharts depends on actionview
 gem 'actionview'
+# Hide api keys
+gem 'dotenv'
+# http requests
+gem 'http'
+# highcharts builder
+gem 'lazy_high_charts'
+# microframework
+gem 'roda', '~> 2.1.0'
+# template engine
+gem 'tilt', '~> 2.0.1'
 
 group :test, :development do
+  # BDD test suite
   gem 'cucumber'
-  gem 'watir'
+  # Json parser for webmock
+  gem 'json'
+  # debugger
   gem 'pry-byebug'
-  gem 'webmock'
+  # Front end automation tests
+  gem 'watir'
 end
