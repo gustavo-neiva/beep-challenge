@@ -9,6 +9,8 @@ Decidi fazer utilizando o microframework Roda pois, além de ser um aplicativo s
 
 Optei por usar Cucumber + Watir para criar cenários de teste autmatizado conciliando BDD com a aplicação testada através da interação no browser.
 
+O site de exemplo está utilizando uma conta grátis do serviço de cotaçoes com um limite de 1000 requests por mês.
+
 Dependências
 ------------
 - [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
