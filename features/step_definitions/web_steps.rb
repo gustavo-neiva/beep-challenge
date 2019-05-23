@@ -26,6 +26,10 @@ When("the app renders the graph") do
 end
 
 Then("the chart data corresponds to the currency api json") do
+  series1 = browser.element(:css => 'g.highcharts-markers')
+  all_path_elements = series1.elements(:css => 'path')
+  points = all_path_elements[0..-2]
+  points[0].hover
   tooltip_values = @browser.elements(css: 'g.highcharts-tooltip tspan')
   date = tooltip_values[0].text
   Date.parse(date)
